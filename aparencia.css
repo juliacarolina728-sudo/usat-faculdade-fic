@@ -18,7 +18,7 @@ body {
   max-width: 900px;   
   margin: auto;       
   padding: 60px;
-  background-color: rgba(254, 251, 228, 0.863);
+  background-color: rgba(254, 251, 228, 0.995);
 }   
 
 h1 { 
@@ -41,7 +41,7 @@ p {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 300px;   
+  width: 360px;   
 }
 
 form{
@@ -51,3 +51,5 @@ form{
   margin: 40px auto;
   gap: 10px;
 }
+  footer{ position: relative;
+  padding: 50px; }
