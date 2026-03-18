@@ -1,2 +1,3 @@
-# USAT.
-# Site teste, aprendendo a usar ferramentas html e css, fiz um site para uma universidade ficcional.
+# Desafio:
+Criar meu primeiro site, para a aula de Desenvolvimento Web da Fatec. Inicialmente usando apenas HTML e CSS, e futuramente o tornando responsivo.
+O tema do site é sobre uma faculdade ficticia, com 3 abas e um formulario no fim.
