@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link rel="stylesheet" href="aparencia.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+<style>
+body {
+  background-image: url("morce.png"); 
+  background-size: cover;   
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: url("pointer.png"), auto;
+}
+</style>
+
 </head>
+
 <body>
-<div class="container">
-<header>
- <img class="logo" src="b1789b69-5e54-4f45-bcd7-38c02c37fc82.jpg">
+ <div class="w3-content w3-card " style="max-width:70%; background-color: rgba(254, 251, 228, 0.995);">
 
-<nav style="position:absolute;top:30%; right:25%;">
-    <a href="sobre.html">
-        <img src="sobreee.gif" width="120px">
-    </a>
-</nav>
+    <header class="w3-container" style="background-image: url('b1789b69-5e54-4f45-bcd7-38c02c37fc82.jpg'); background-size: cover; background-position: center; position: relative; padding: 20%; transition: filter 0.3s;" 
+onmouseover="this.style.filter='grayscale(100%)'" 
+onmouseout="this.style.filter='grayscale(0%)'">
 
-<nav style="position: absolute; top:35%;left: 45%;">
-    <a href="index.html">
-        <img src="home.gif" width="90px">
-    </a>
-</nav>
- </header>
- <H1>Faça sua matrícula</H1>
-<form action=>
-  
-  <label for="nome">Nome:</label>
-  <input type="text" id="nome" name="nome" required >
-
- 
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
-
-  <label for="Phone">Telefone:</label>
-  <input type="tel" id="Phone" name="Telefone"required>
-
-  <button type="submit">Enviar</button>
-</form>
-<footer>
- <h4> Informações de Contato da nossa unidade:</h4>
- <h5>Telefone: </h5>
- <p>1234567</p>
- <h5>EMAIL:</h5>
- <p>USAT.terror@email.com</p></footer>
-      
-</div>
+        <nav style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0,0,0,0.6);">
+            <a href="index.html" class="w3-button  w3-mobile" style="color: white; font-family: 'Creepster', cursive; font-size: 1.1rem; letter-spacing: 2px;">🏚 Início</a>
+            <a href="sobre.html" class="w3-button  w3-mobile" style="color: white; font-family: 'Creepster', cursive; font-size: 1.1rem; letter-spacing: 2px;">💀 Sobre</a>
+            <a href="contato.html" class="w3-button  w3-mobile" style="color: white; font-family: 'Creepster', cursive; font-size: 1.1rem; letter-spacing: 2px;">🩸 Contato</a>
+        </nav>
+    </header>
     
+ <div class="w3-container" style="padding: 4% 8% 6% 8%;"></div>
+    <H1>Faça sua matrícula</H1>
+ 
+    <form action=>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+ 
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+ 
+        <label for="Phone">Telefone:</label>
+        <input type="tel" id="Phone" name="Telefone" required>
+ 
+       <button class="w3-button w3-border w3-hover-red, ">Enviar</button> 
+    </form>
+ 
+    <footer>
+        <h4>Informações de Contato da nossa unidade:</h4>
+        <h5>Telefone:</h5>
+        <p>1234567</p>
+        <h5>EMAIL:</h5>
+        <p>USAT.terror@email.com</p>
+    </footer>
+ 
+</div>
+</div>
 </body>
 </html>
 
