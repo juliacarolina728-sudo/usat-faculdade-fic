@@ -6,15 +6,25 @@
 <title>Document</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
 body {
-  background-image: url("morce.png"); 
+  background-image: url("morce.png");  /* Imagem como fundo pelo caminho da sua imagem de fundo */
   background-size: cover;   
-  background-position: center;
+  background-position: center; 
   background-repeat: no-repeat;
   cursor: url("pointer.png"), auto;
 }
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); } /* animação de rotação para o ícone de envio */
+}
+.spinning {
+    animation: spin 1s linear infinite;
+    display: inline-block;
+}
+
 </style>
 
 </head>
@@ -31,11 +41,11 @@ body {
     <a href="index.html" class="w3-button w3-mobile" style="color: white; font-family: 'Creepster', cursive; font-size: 1.1rem; letter-spacing: 2px;">🏚 Início</a>
     <a href="sobre.html" class="w3-button w3-mobile" style="color: white; font-family: 'Creepster', cursive; font-size: 1.1rem; letter-spacing: 2px;">💀 Sobre</a>
     <a href="contato.html" class="w3-button w3-mobile" style="color: white; font-family: 'Creepster', cursive; font-size: 1.1rem; letter-spacing: 2px;">🩸 Contato</a>
-</nav>
+</nav> 
     
     
  <div class="w3-container w3-mobile" style="padding: 4% 8% 6% 8%; text-align: center" >
-    <h1 style="color: rgb(6, 6, 4); font-family: 'Creepster', cursive">Faça sua matrícula</h1></div>
+    <h1 style="color: rgb(6, 6, 4); font-family: 'Creepster', cursive">Faça sua matrícula</h1></div>  /
  <div class="w3-dark-grey w3-hover-shadow w3-padding-64 w3-center" style="width: 70%; margin: auto;">
    <form class="w3-container">
         <div style="max-width: 300px; margin: auto; text-align: left;">
@@ -53,10 +63,13 @@ body {
             <input class="w3-input w3-animate-input" type="text" style="width:135px"><br>
 
         </div>
-        <button class="w3-button w3-border w3-hover-red">Enviar</button>
+        <button class="w3-button w3-border w3-hover-red" onclick="this.querySelector('i').classList.add('spinning')">
+    Enviar <i class="fa fa-refresh"></i>
+</button>
     </form>
 </div>
  
+
    <footer class="w3-container" style="padding: 2%; text-align: center;">
     <h4>Informações de Contato da nossa unidade:</h4>
     <h5>Telefone:</h5>
