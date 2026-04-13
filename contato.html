@@ -22,9 +22,10 @@ body {
 <body>
  <div class="w3-content w3-card " style="max-width:70%; background-color: rgba(254, 251, 228, 0.995);">
 
-    <header class="w3-container" style="background-image: url('b1789b69-5e54-4f45-bcd7-38c02c37fc82.jpg'); background-size: cover; background-position: center; position: relative; padding: 20%; transition: filter 0.3s;" 
-onmouseover="this.style.filter='grayscale(100%)'" 
-onmouseout="this.style.filter='grayscale(0%)'"></header>
+    <header class="w3-display-container" style="width:100%;">
+        <img src="b1789b69-5e54-4f45-bcd7-38c02c37fc82.jpg" alt="Header"  style="width:100%; height: auto; object-fit: cover; filter: grayscale(0%); transition: filter 0.3s;"
+           onmouseover="this.style.filter='grayscale(100%)'"
+           onmouseout="this.style.filter='grayscale(0%)'"></header>
 
       <nav style="width: 100%; background-color: rgba(0,0,0,0.6);">
     <a href="index.html" class="w3-button w3-mobile" style="color: white; font-family: 'Creepster', cursive; font-size: 1.1rem; letter-spacing: 2px;">🏚 Início</a>
@@ -33,20 +34,23 @@ onmouseout="this.style.filter='grayscale(0%)'"></header>
 </nav>
     
     
- <div class="w3-container" style="padding: 4% 8% 6% 8%; text-align: center" >
+ <div class="w3-container w3-mobile" style="padding: 4% 8% 6% 8%; text-align: center" >
     <h1 style="color: rgb(6, 6, 4); font-family: 'Creepster', cursive">Faça sua matrícula</h1></div>
  <div class="w3-dark-grey w3-hover-shadow w3-padding-64 w3-center" style="width: 70%; margin: auto;">
-    <form>
+   <form class="w3-container">
         <div style="max-width: 300px; margin: auto; text-align: left;">
 
             <label for="nome">Nome:</label>
-            <input class="w3-input w3-border" type="text" id="nome" name="nome" required style="margin-bottom: 16px;">
+            <input class="w3-input w3-animate-input" type="text"required style="width:135px"><br>
 
             <label for="email">Email:</label>
-            <input class="w3-input w3-border" type="email" id="email" name="email" required style="margin-bottom: 16px;">
+            <input class="w3-input w3-animate-input" type="text" required style="width:135px"><br>
 
             <label for="Phone">Telefone:</label>
-            <input class="w3-input w3-border" type="tel" id="Phone" name="Telefone" required style="margin-bottom: 24px;">
+            <input class="w3-input w3-animate-input" type="text" required style="width:135px"><br>
+           
+            <label for="sugestoes">Sugestões:</label>
+            <input class="w3-input w3-animate-input" type="text" style="width:135px"><br>
 
         </div>
         <button class="w3-button w3-border w3-hover-red">Enviar</button>
